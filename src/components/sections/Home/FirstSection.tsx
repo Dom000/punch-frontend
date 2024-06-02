@@ -22,7 +22,7 @@ function FirstSection() {
           </Text.H2>
         </div>
       </div>
-      <div className="md:w-2/5 space-y-5 p-5">
+      <div className="md:w-2/5 space-y-5 p-5 flex flex-col justify-center items-center">
         <p className="text-center text-lg text-text_color">
           With our rigorous pre-vetting process, you'll never have to worry
           about finding the ideal candidate ever again.
@@ -41,7 +41,8 @@ function FirstSection() {
           </Button>
         </div>
       </div>
-      <CourseTabs/>
+      <CourseTabs />
+      <div className="bg-[url('/assets/Union.svg')] w-full h-32 bg-no-repeat"></div>
     </div>
   );
 }
