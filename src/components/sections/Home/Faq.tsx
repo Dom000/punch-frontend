@@ -4,7 +4,7 @@ import { Content } from "./types.courselist";
 const Faq = () => {
   const [active, setActive] = useState(-1);
   return (
-    <section className="md:-mt-9 -mt-5 z-30 relative 2xl:mx-auto 2xl:mx-w-7xl">
+    <section className="md:-mt-9 -mt-5 z-10 relative 2xl:mx-auto 2xl:mx-w-7xl">
       <div className="bg-punch_offwhite w-full  h-8 md:h-12"></div>
       <div className="bg-punch_offwhite w-full flex -mt-1 pb-14 md:pb-32  pt-16">
         <div className="w-full">
