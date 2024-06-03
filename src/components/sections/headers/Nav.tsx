@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { links } from "./navLinks";
 import "./styles/hamburger.css";
 

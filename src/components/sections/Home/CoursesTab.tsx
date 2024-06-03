@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription } from "@/components/ui/card";
+import { Card, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { courselist } from "./types.courselist";
 import { FaSquareCheck } from "react-icons/fa6";
