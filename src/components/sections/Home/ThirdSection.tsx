@@ -14,8 +14,8 @@ function ThirdSection() {
           className="absolute z-10 w-16 md:w-auto top-12 md:top-9 lg:top-3.5 right-2 -rotate-3"
         />
 
-        <Fade triggerOnce>
-          <div className="w-full md:w-2/4">
+          <div className="w-full md:w-2/4">        <Fade triggerOnce>
+
             <div className="w-3/4 hidden md:block  ">
               <Text.H1 className="max-w-md  text-[54px] leading-tight font-bold text-white lg:max-w-sm">
                 How it worked for Jason
@@ -56,9 +56,9 @@ function ThirdSection() {
               >
                 <PunchArrow fill="#50589F" className="-rotate-90" />
               </Button>
-            </div>
+            </div>        </Fade>
+
           </div>
-        </Fade>
         <div className="w-full md:w-2/4 pt-24">
           <div className="flex items-center space-x-3">
             <img src="/assets/Frame_626655.svg" className="mt-4 w-16" />
