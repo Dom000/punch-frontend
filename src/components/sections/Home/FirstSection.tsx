@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 function FirstSection() {
   return (
     <div className="w-full  flex flex-col items-center justify-center">
-      <div className="md:p-10 p-5 md:pt-16 flex flex-col justify-center items-center">
+      <div className="md:p-10 p-5 pt-16 flex flex-col justify-center items-center">
         <Fade triggerOnce>
           <div className="hidden md:flex ">
             <Text.H1 className="text-center">
