@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Punch Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a frontend application built using React and Vite. It includes various dependencies and development tools to ensure a smooth development experience.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Scripts](#scripts)
+  - [Development](#development)
+  - [Build](#build)
+  - [Lint](#lint)
+  - [Preview](#preview)
+  - [Start](#start)
+- [Dependencies](#dependencies)
+- [DevDependencies](#devdependencies)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Before you begin, ensure you have met the following requirements:
 
-- Configure the top-level `parserOptions` property like this:
+- **Node.js**: Install Node.js (version 14 or higher) from [nodejs.org](https://nodejs.org/)
+- **npm**: npm is distributed with Node.js, so if you have Node.js installed, you should also have npm.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To set up the project, follow these steps:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Dom000/punch-frontend.git
+
+
+
+2. Navigate to the project directory:
+   ```sh
+   cd punch-frontend
+
+
+3. Install the dependencies:
+   ```sh
+   npm install
+
+
+4. To start the development server, run:
+   ```sh
+   npm run dev
+
+5. To build the project for production, run:
+   ```sh
+   npm run build
+
+
+
+   
+
