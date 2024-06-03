@@ -7,8 +7,8 @@ import FooterQuickLinks from "./FooterQuickLinks";
 
 const Footer = () => {
   return (
-    <footer className="w-full ">
-      <div className="bg-[url('/assets/footer_small_vector.svg')] w-full h-16 bg-no-repeat"></div>
+    <footer className="w-full  z-10 -mt-14">
+      <div className="bg-[url('/assets/footer_small_vector.svg')]  w-full h-16 bg-no-repeat"></div>
       <div className="w-full bg-gradient-to-b from-punch_gradient_black  to-punch_gradient_black h-[200px] md:h-[500px] px-5 md:px-10">
         <div className="w-full bg-[url('/assets/footer_violet.svg')] h-full bg-contain bg-no-repeat flex justify-center items-center space-y-3 md:space-y-7 flex-col">
           <div className="md:w-3/4 -mt-6 md:-mt-24">

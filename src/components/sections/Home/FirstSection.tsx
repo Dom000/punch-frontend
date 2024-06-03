@@ -3,11 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Text from "@/components/ui/text";
 import { CourseTabs } from "./CoursesTab";
+import { Fade } from "react-awesome-reveal";
 
 function FirstSection() {
   return (
     <div className="w-full  flex flex-col items-center justify-center">
-      <div className="md:p-10 p-5 pt-16 flex flex-col justify-center items-center">
+      <Fade triggerOnce className="md:p-10 p-5 md:pt-16 flex flex-col justify-center items-center">
         <div className="hidden md:flex ">
           <Text.H1 className="text-center">
             Finding the right fit{" "}
@@ -28,8 +29,8 @@ function FirstSection() {
         </div>
 
         
-      </div>
-      <div className="md:w-2/5 space-y-5 p-5 flex flex-col justify-center items-center">
+      </Fade>
+      <Fade triggerOnce className="md:w-2/5 w-full space-y-5 p-5 flex flex-col justify-center items-center">
         <p className="text-center text-lg text-text_color">
           With our rigorous pre-vetting process, you'll never have to worry
           about finding the ideal candidate ever again.
@@ -47,7 +48,7 @@ function FirstSection() {
             <PunchArrow className="-rotate-90 p-1" fill="black" />
           </Button>
         </div>
-      </div>
+      </Fade>
       <CourseTabs />
       <div className="bg-[url('/assets/Union.svg')] w-full h-32 bg-no-repeat"></div>
     </div>

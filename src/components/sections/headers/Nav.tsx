@@ -2,13 +2,18 @@ import { useState } from "react";
 import { links } from "./navLinks";
 import "./styles/hamburger.css";
 
-function MobileHanburger() {
-  const [open, setopen] = useState<Boolean>(false);
+function MobileHanburger({
+  open,
+  setopen,
+}: {
+  open: Boolean;
+  setopen: React.Dispatch<React.SetStateAction<Boolean>>;
+}) {
   return (
     <svg
       onClick={() => setopen(!open)}
       id={open && "hamburger"}
-      className="md:hidden Header__toggle-svg"
+      className="lg:hidden Header__toggle-svg"
       viewBox="0 0 60 40"
     >
       <g
@@ -25,17 +30,24 @@ function MobileHanburger() {
   );
 }
 
-function Nav() {
+function Nav({
+  open,
+  setopen,
+}: {
+  open: Boolean;
+  setopen: React.Dispatch<React.SetStateAction<Boolean>>;
+}) {
+
   return (
     <div className=" w-full flex items-center justify-center">
-      <div className="hidden  md:flex   md:space-x-5 ">
+      <div className="hidden  lg:flex   md:space-x-5 ">
         {links.map((link, index) => (
           <nav className="text-white text-sm hover:text-white/60" key={index}>
             {link.name}
           </nav>
         ))}
       </div>
-      <MobileHanburger />
+      <MobileHanburger open={open} setopen={setopen} />
     </div>
   );
 }

@@ -4,18 +4,24 @@ import { dummySkils } from "./types.courselist";
 import SkillCard from "./SkillCard";
 import { Button } from "@/components/ui/button";
 import PunchArrow from "@/components/icons/PunchArrow";
+import { Slide } from "react-awesome-reveal";
 
 function SecondSection() {
   return (
     <div className="bg-[url('/assets/violet_bg.svg')] flex items-center flex-col w-full h-full  p-5 md:p-10">
-      <Text.H1 className="text-center hidden md:flex my-14 md:my-32">
-        Your one-stop marketplace for finding <br />
-        the talent your business needs.
-      </Text.H1>
-      <Text.H3 className="text-center flex md:hidden my-14 md:my-32">
-        Your one-stop marketplace for finding <br />
-        the talent your business needs.
-      </Text.H3>
+      <Slide direction="up" triggerOnce>
+        <Text.H1 className="text-center hidden md:flex my-14 md:my-32">
+          Your one-stop marketplace for finding <br />
+          the talent your business needs.
+        </Text.H1>
+      </Slide>
+
+      <Slide direction="up" triggerOnce>
+        <Text.H3 className="text-center flex md:hidden my-14 md:my-32">
+          Your one-stop marketplace for finding <br />
+          the talent your business needs.
+        </Text.H3>
+      </Slide>
       {skills.map((skill, index) => (
         <SkillCard key={index} data={skill} index={index} />
       ))}

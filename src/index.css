@@ -74,3 +74,11 @@
       @apply bg-background text-foreground;
     }
   }
+
+   #right-separator {
+      @apply absolute left-0 bottom-0 border-t-[4.5vw] border-t-transparent border-r-[100vw] border-r-black;
+   }
+
+   #left-separator {
+      @apply absolute left-0 bottom-0 border-b-[4.5vw] border-b-transparent border-l-[100vw] border-l-black;
+   }

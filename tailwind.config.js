@@ -71,6 +71,32 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      screens: {
+        300: "300px",
+        400: "400px",
+        500: "500px",
+        600: "600px",
+        700: "700px",
+        800: "800px",
+        900: "900px",
+        1000: "1000px",
+        1100: "1100px",
+        1200: "1200px",
+        1300: "1300px",
+        1400: "1400px",
+        1500: "1500px",
+        "1xl": "1300px",
+        "3xl": "1920px",
+        "4xl": "2560px",
+        "5xl": "3000px",
+      },
+      container: {
+        center: true,
+        padding: "1.3rem",
+        screens: {
+          "2xl": "1440px",
+        },
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

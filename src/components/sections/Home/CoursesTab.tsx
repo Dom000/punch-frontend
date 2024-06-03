@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { courselist } from "./types.courselist";
 import { FaSquareCheck } from "react-icons/fa6";
+import { Slide } from "react-awesome-reveal";
 
 const courses: courselist[] = [
   { title: "Python Developer" },
@@ -20,10 +21,10 @@ const courses: courselist[] = [
 
 export function CourseTabs() {
   return (
-    <Card className="w-full md:w-3/5 flex items-center mt-5 border-none p-2 mb-14 bg-punch_offwhite justify-center">
+    <Card className="w-full md:w-4/5 lg:w-3/5 flex items-center mt-5 border-none p-2 mb-14 bg-punch_offwhite justify-center">
       <Tabs
         defaultValue="IT"
-        className="w-full md:w-4/5 flex flex-col items-center"
+        className="w-full lg:w-4/5 flex flex-col items-center"
       >
         <TabsList className="grid bg-[#D2D2D2]/20  transition max-w-screen-md w-full md:w-3/5 mt-5 duration-200 grid-cols-2">
           <TabsTrigger
@@ -48,10 +49,12 @@ export function CourseTabs() {
               key={index}
               className="flex mt-2 items-center justify-between "
             >
-              <span className="flex items-center">
-                <FaSquareCheck className="text-punch_lemon" />
-                <p>{crs.title}</p>
-              </span>
+              <Slide triggerOnce>
+                <span className="flex items-center">
+                  <FaSquareCheck className="text-punch_lemon" />
+                  <p>{crs.title}</p>
+                </span>
+              </Slide>
             </CardDescription>
           ))}
         </TabsContent>
@@ -64,10 +67,12 @@ export function CourseTabs() {
               key={index}
               className="flex items-center justify-between "
             >
-              <span className="flex items-center">
-                <FaSquareCheck className="text-punch_violet" />
-                <p>{crs.title}</p>
-              </span>
+              <Slide triggerOnce >
+                <span className="flex items-center">
+                  <FaSquareCheck className="text-punch_violet" />
+                  <p>{crs.title}</p>
+                </span>
+              </Slide>
             </CardDescription>
           ))}
         </TabsContent>
