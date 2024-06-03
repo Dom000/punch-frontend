@@ -39,7 +39,7 @@ const H2: FC<Omit<TextProps, "as">> = ({ className, ...props }) => (
 const H3: FC<Omit<TextProps, "as">> = ({ className, ...props }) => (
   <Text
     as="h3"
-    className={`text-3xl font-semibold  text-punch_black ${className || ""}`}
+    className={`text-3xl font-bold  text-punch_black ${className || ""}`}
     {...props}
   />
 );

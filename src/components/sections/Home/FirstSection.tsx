@@ -8,19 +8,26 @@ function FirstSection() {
   return (
     <div className="w-full  flex flex-col items-center justify-center">
       <div className="md:p-10 p-5 pt-16 flex flex-col justify-center items-center">
-        <div className="md:flex hidden ">
-          <Text.H1 className="text-center">Finding the right fit</Text.H1>
-          <img src="/assets/text-image.svg" />
-          <Text.H1 className="text-center">has</Text.H1>
+        <div className="hidden md:flex ">
+          <Text.H1 className="text-center">
+            Finding the right fit{" "}
+            <span className="inline-block">
+              <img src="/assets/text-image.svg" />
+            </span>
+            has <br/>never been easier.
+          </Text.H1>
         </div>
-        <Text.H1 className="text-center md:flex hidden ">
-          never been easier.
-        </Text.H1>
-        <div className="md:hidden flex items-center justify-center ">
-          <Text.H2 className="text-center relative ">
-            Finding the right fit has never been easier.
+        <div className="md:hidden ">
+          <Text.H2 className="text-center">
+            Finding the right fit{" "}
+            <span className="inline-block">
+              <img src="/assets/text-image.svg" className="w-10" />
+            </span>
+            has <br/>never been easier.
           </Text.H2>
         </div>
+
+        
       </div>
       <div className="md:w-2/5 space-y-5 p-5 flex flex-col justify-center items-center">
         <p className="text-center text-lg text-text_color">

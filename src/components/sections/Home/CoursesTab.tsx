@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { courselist } from "./types.courselist";
+import { FaSquareCheck } from "react-icons/fa6";
 
 const courses: courselist[] = [
   { title: "Python Developer" },
@@ -20,7 +21,10 @@ const courses: courselist[] = [
 export function CourseTabs() {
   return (
     <Card className="w-full md:w-3/5 flex items-center mt-5 border-none p-2 mb-14 bg-punch_offwhite justify-center">
-      <Tabs defaultValue="IT" className="w-full md:w-4/5 flex flex-col items-center">
+      <Tabs
+        defaultValue="IT"
+        className="w-full md:w-4/5 flex flex-col items-center"
+      >
         <TabsList className="grid bg-[#D2D2D2]/20  transition max-w-screen-md w-full md:w-3/5 mt-5 duration-200 grid-cols-2">
           <TabsTrigger
             className="data-[state=active]:bg-punch_lemon"
@@ -37,27 +41,33 @@ export function CourseTabs() {
         </TabsList>
         <TabsContent
           value="IT"
-          className="grid grid-cols-2 md:grid-cols-3 gap-1.5   md:w-full"
+          className="grid grid-cols-2 md:grid-cols-3 gap-0.5  md:w-full"
         >
           {courses.map((crs, index) => (
             <CardDescription
               key={index}
-              className="flex items-center justify-between "
+              className="flex mt-2 items-center justify-between "
             >
-              {crs.title}
+              <span className="flex items-center">
+                <FaSquareCheck className="text-punch_lemon" />
+                <p>{crs.title}</p>
+              </span>
             </CardDescription>
           ))}
         </TabsContent>
         <TabsContent
           value="Design"
-          className="grid grid-cols-2 md:grid-cols-3 gap-1.5  md:w-full"
+          className="grid grid-cols-2 md:grid-cols-3 gap-2  md:w-full"
         >
           {courses.map((crs, index) => (
             <CardDescription
               key={index}
               className="flex items-center justify-between "
             >
-              {crs.title}
+              <span className="flex items-center">
+                <FaSquareCheck className="text-punch_violet" />
+                <p>{crs.title}</p>
+              </span>
             </CardDescription>
           ))}
         </TabsContent>
